@@ -1,0 +1,1 @@
+insert into staff values(“1”,”zhao”,"18500189216","buaa","zhao@163.com");
