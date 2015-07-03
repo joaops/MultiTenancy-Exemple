@@ -1,6 +1,6 @@
 ## MultiTenancy Example
 
-**Description:**
+**Description**
 
 This is a very simple multi-tenant example, using Hibernate to realize multi-tenancy.
 
@@ -8,7 +8,7 @@ This is a very simple multi-tenant example, using Hibernate to realize multi-ten
 
 - Connection pool strategy : all tenants sharing one connection pool 
 
-**Version:**
+**Version**
 
 - Spring:4.1.6.RELEASE
 
@@ -19,6 +19,7 @@ This is a very simple multi-tenant example, using Hibernate to realize multi-ten
 - STS:3.6.4.RELEASE
 
 **Note**
+
 The bean.xml in the src dictory is used for junit, if you want to deploy it to the server ,please use the bean.xml in tmp dictory.
 
 
