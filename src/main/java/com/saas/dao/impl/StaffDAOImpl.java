@@ -9,39 +9,32 @@ import com.saas.po.Staff;
 
 
 public class StaffDAOImpl extends HibernateDaoSupport implements StaffDAO {
-
-	@Override
-	public void add(Staff staff) {
-		this.getHibernateTemplate().save(staff);
-
-	}
-
-	@Override
-	public void update(Staff staff) {
-		this.getHibernateTemplate().update(staff);
-
-
-	}
-
-	@Override
-	public void delete(Staff staff) {
-		this.getHibernateTemplate().delete(staff);
-
-
-	}
-
-	@Override
-	public Staff getStaff(Integer staffId) {
-		
-		return this.getHibernateTemplate().get(Staff.class, staffId);
-	}
-
-	@Override
-	public List<Staff> getAllStaff() {
-		String hql = "from  Staff";
-		Query query = this.currentSession().createQuery(hql);
-
-		return query.list();
-	}
-
+    
+    @Override
+    public void add(Staff staff) {
+        this.getHibernateTemplate().save(staff);
+    }
+    
+    @Override
+    public void update(Staff staff) {
+        this.getHibernateTemplate().update(staff);
+    }
+    
+    @Override
+    public void delete(Staff staff) {
+        this.getHibernateTemplate().delete(staff);
+    }
+    
+    @Override
+    public Staff getStaff(Integer staffId) {
+        return this.getHibernateTemplate().get(Staff.class, staffId);
+    }
+    
+    @Override
+    public List<Staff> getAllStaff() {
+        String hql = "from  Staff";
+        Query query = this.currentSession().createQuery(hql);
+        return query.list();
+    }
+    
 }
