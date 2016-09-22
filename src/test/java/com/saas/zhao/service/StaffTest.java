@@ -51,7 +51,10 @@ public class StaffTest {
     public void insert() throws Exception{
         Staff staff = new Staff();
         staff.setStaffId(3);
-        staff.setAccount("hello");
+        staff.setRoleId(3);
+        staff.setName("staff3");
+        staff.setAccount("staff3");
+        staff.setPassword("staff3");
         //Obter a data atual, e inserido no banco de dados
         //staff.setCreateDate(ZhaoTime.getCurrentDate());
         staffService.add(staff);
